@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.projectsContainer :global(.projectCard) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.projectsContainer :global(.mainLink) {
+  width: fit-content;
+  text-decoration: none;
+  color: #222;
+  transition: transform 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectsContainer :global(.mainLink:hover) {
+  transform: scale(1.05);
+}
+
+.projectsContainer :global(.mainLink img) {
+  max-width: 250px;
+  background-color: var(--project-card-bg);
+  border-radius: 20px;
+}
+
+.projectsContainer :global(.linkButtons) {
+  display: flex;
+  gap: 10px;
+}
+
+.projectsContainer :global(.codeLink),
+.projectsContainer :global(.liveLink) {
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: underline; 
+  
+  font-size: 24px;
+  transition: opacity 200ms ease-in-out;
+}
+
+/* .projectsContainer :global(.codeLink) {
+  background-color: #333;
+}
+
+.projectsContainer :global(.liveLink) {
+  background-color: #0070f3;
+} */
+
+.projectsContainer :global(.codeLink:hover),
+.projectsContainer :global(.liveLink:hover) {
+  opacity: 0.8;
+}
+
+@media (width >= 800px) {
+  .projectsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 30px;
+  }
+}
+
