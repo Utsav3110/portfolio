@@ -22,7 +22,7 @@ function Projects() {
         />
         <ProjectCard
           src={ForEver}
-          link="https://github.com/Ade-mir/company-landing-page-2"
+          link="https://github.com/Utsav3110/E-commerce"
           h3="FOREVER"
           p="E-Commerce with admin pannel"
           code="https://github.com/Utsav3110/E-commerce"
