@@ -1,17 +1,25 @@
 import styles from './ProjectsStyles.module.css';
-import videoVerse from './../../assets/videoVerse.png'
+import videoVerse from './../../assets/videoVerse.png';
 import ProjectCard from '../../common/ProjectCard';
-import ClearPath from '../../assets/ClearPath.png'
-import ForEver from './../../assets/FOREVER.png'
-import chatHub from './../../assets/chatHub.png'
-
+import ClearPath from '../../assets/ClearPath.png';
+import ForEver from './../../assets/FOREVER.png';
+import chatHub from './../../assets/chatHub.png';
+import taskify from './../../assets/task.png';
 
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
-        
+        <ProjectCard
+          src={taskify}
+          link="https://github.com/Utsav3110/VideoVerse/"
+          h3="taskify"
+          p="Task Manager API"
+          code="https://github.com/utsav-3110/tasks_fastapi"
+          live="https://fast-api-1-qa6d.onrender.com/docs"
+        />
+
         <ProjectCard
           src={videoVerse}
           link="https://github.com/Utsav3110/VideoVerse/"
@@ -28,7 +36,7 @@ function Projects() {
           code="https://github.com/Utsav3110/E-commerce"
           live="https://forever-client-virid.vercel.app/"
         />
-          <ProjectCard
+        <ProjectCard
           src={chatHub}
           link="https://github.com/Utsav3110/ChatHub/"
           h3="ChatHub"
@@ -37,7 +45,7 @@ function Projects() {
           code="https://github.com/Utsav3110/ChatHub/"
           live=""
         />
-        <ProjectCard 
+        <ProjectCard
           src={ClearPath}
           link="https://github.com/Utsav3110/ClearPath/"
           h3="ClearPath"
@@ -45,10 +53,6 @@ function Projects() {
           code="https://github.com/Utsav3110/ClearPath/"
           live=""
         />
-        
-        
-
-        
       </div>
     </section>
   );
